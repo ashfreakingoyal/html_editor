@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>html editor</title>
+          <style>
+               #tr{
+                    display: flex;
+               }
+          </style>
+     </head>
+<body>
+
+<h1 style="text-align: center;">HTML EDITOR</h1>
+<div id="tr">
+<textarea style="width: 50%;background-color: #393e46;color: azure;" rows="44" type="text" id="input" onkeyup="tanz()"></textarea>
+<div style="border: 1px solid black; width: 50%;" rows=45; id="result"></div>
+</div>
+<script>
+function tanz() {
+     var text=document.getElementById("input").value;
+     document.getElementById("result").innerHTML=text;
+     
+  
+}
+
+
+</script>
+
+</body>
+</html>
